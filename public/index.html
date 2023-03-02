@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon-informa-32.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo-informa-192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,10 +24,25 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>%REACT_APP_TITLE%</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src='/src/env.js'></script>
+    <noscript>InfoMEX does not support browsers without Javascript</noscript>
+    <script type="application/javascript">
+      if (/MSIE|Trident/.test(window.navigator.userAgent)) alert('InfoMEX is not supported in this browser.\n Try to use another browser.');
+    </script>
+    <script>
+      if (/MSIE|Trident/.test(window.navigator.userAgent))
+        document.write('InfoMEX is not supported in this browser.\n Try to use another browser.')
+    </script>
+    <!--[if (/MSIE|Trident/.test(window.navigator.userAgent))]>
+    <div id="warning">
+    <h4 class="red">Your Browser Is Not Supported!</h4><br />
+    <p>Please upgrade to <a href='http://getfirefox.com'>FireFox</a>, <a href='http://www.opera.com/download/'>Opera</a>, <a href='http://www.apple.com/safari/'>Safari</a> or <a href='http://www.microsoft.com/windows/downloads/ie/getitnow.mspx'>Internet Explorer 7 or 8</a>. Thank You!&nbsp;&nbsp;&nbsp;<a href="#" onClick="document.getElementById('warning').style.display = 'none';"><b>Close Window</b></a></p>
+    </div>
+    <![endif]-->
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

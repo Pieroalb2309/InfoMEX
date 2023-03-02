@@ -1,3 +1,8 @@
+/*@import "";*/
+@import 'antd/dist/antd.min.css';
+/*@import 'bootstrap/dist/css/bootstrap.min.css';*/
+@import '@grapecity/wijmo.styles/wijmo.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +11,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url("./assets/fonts/Oswald/Oswald-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: normal;
+  src: local("Oswald"), url("./assets/fonts/Oswald/Oswald-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  src: local("Oswald"),url("./assets/fonts/Oswald/Oswald-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: bold;
+  src: local("Oswald"),url("./assets/fonts/Oswald/Oswald-Bold.ttf") format("truetype");
 }

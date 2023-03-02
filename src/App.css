@@ -1,5 +1,7 @@
+/*
 .App {
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .App-logo {
@@ -14,20 +16,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +35,230 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container{
+  background-color: #61dafb;
+}
+*/
+/**************************/
+/*Header*/
+/**************************/
+.collapse-button-container{
+  font-size: xx-large;
+  padding-right:1rem;
+  color:white;
+}
+.collapse-button-container:hover{
+  cursor: pointer;
+  color: #e8e4e4;
+}
+/**************************/
+/*Sider*/
+/**************************/
+.ant-menu-dark{
+  background-color: #004c29;
+}
+.ant-menu-item{
+  background-color: #004c29;
+}
+
+/**************************/
+/*Machine List Page Style*/
+/**************************/
+.machine-container{
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.machine-sub1-container{}
+.machine-sub2-container{
+  margin: 0px ;
+  /*display: flex;*/
+  /*justify-content: center;*/
+}
+.machine-list-container{
+
+}
+.machine-option-container{
+  width: 70vw;
+  height: 20vh;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.machine-option-container:hover{
+  background-color: #797777;
+}
+.machine-option-title{
+  /*padding: 40px 0 0 40px;*/
+  display: block;
+  margin: inherit;
+  color: black;
+}
+.machine-option-icon-container{
+  padding: 10px;
+  margin: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.machine-option-icon-active{
+  font-size: 5.5rem;
+  color:black !important;
+}
+.machine-option-icon-inactive{
+  font-size: 2.5rem;
+  color:#E0D7D7;
+}
+
+
+/*Responsives style for the table & PC screen*/
+@media only screen and (max-width: 500px) {
+  .machine-option-icon-active{font-size: 3rem}
+  .machine-option-title{font-size: 1rem}
+}
+@media only screen and (min-width: 500px) {
+  .machine-option-icon-active{font-size: 3rem}
+  .machine-option-title{font-size: 1.5rem}
+}
+@media only screen and (min-width: 780px) {
+  /*.machine-container{margin: 0 50px }*/
+  .machine-sub2-container{margin: 20px 0px 0}
+  .machine-option-icon-active{font-size: 4rem}
+}
+/*****************************/
+/*Machine Run List Page Style*/
+/*****************************/
+.list-container{
+  margin: 0;
+}
+.list-sub1-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0rem;
+}
+.list-sub2-container{
+  /*border: 2px solid black;*/
+  box-sizing: border-box;
+  padding-top: 20px;
+  /*min-height: 70vh;*/
+}
+.flex-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /*align-items: flex-start;*/
+}
+.table-container{
+  background-color: #c4c4c4;
+  border: 1px solid #868686;
+  border-radius: 8px;
+  min-height: 30vh;
+  max-height: 40vh;
+  margin-bottom:1rem;
+}
+.run-container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  /*margin:0 20px;*/
+}
+.run-table-container{
+  display: flex;
+  flex-direction: column;
+}
+.setup-container{
+  padding-top: 0vh;
+}
+.setup-table-container{
+  display: flex;
+  flex-direction: column;
+}
+.modal-levate-container{
+  min-width: 40vw;
+}
+.form-container{
+  display: flex;
+}
+.divider-vertical{
+}
+.modal-column-expand-container{
+}
+.machine-page-button-container{
+  /*padding: 0 3.5rem;*/
+}
+.option-button-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /*margin-top: 60px;*/
+}
+/*Responsives style for the table & PC screen*/
+@media only screen and (max-width: 500px) {
+  .flex-container{display: contents;flex-direction: column}
+  .setup-container{padding-top: 0vh}
+  .run-container{flex-direction: column}
+  .option-button-container{flex-direction: row;justify-content: space-around}
+  .modal-levate-container{min-width: 70vw}
+  .form-container{flex-direction: column}
+  .divider-vertical{height: 0vh;opacity: 0}
+}
+@media only screen and (min-width: 500px) {
+  .flex-container{display: contents;flex-direction: column}
+  .run-container{flex-direction: column}
+  .setup-container{padding-top: 0vh}
+  .option-button-container{flex-direction: row;justify-content: space-around}
+  .modal-levate-container{min-width: 70vw}
+  .form-container{flex-direction: column}
+  .divider-vertical{height: 0vh;opacity: 0}
+}
+@media only screen and (min-width: 800px) {
+  .run-container{flex-direction: column}
+  .setup-container{padding-top: 0vh}
+  .option-button-container{flex-direction: row;justify-content: space-around}
+  .list-container{margin: 0 0px 0px}
+  .modal-levate-container{min-width: 60vw}
+}
+@media only screen and (min-width: 1200px) {
+  .run-container{flex-direction: column}
+  .setup-container{padding-top: 0vh}
+  .option-button-container{flex-direction: row;justify-content: space-around}
+}
+@media only screen and (min-width: 1600px) {
+  .flex-container{display: flex;flex-direction: row}
+  .table-container{min-height: 20vh}
+  .setup-container{padding-top: 32px}
+  .modal-levate-container{min-width: 50vw}
+  .form-container{justify-content: space-around;flex-direction: row}
+  .divider-vertical{height: 28vh;opacity: 1}
+  .modal-column-expand-container{width:24vw}
+}
+
+/*****************************/
+/**Components Style**/
+/*****************************/
+
+/**Tablegrid(WIJMO)**/
+.status-running {
+  color:black!important;
+  font-weight: normal;
+  background-color:#9FFF81!important;
+}
+
+.status-suspended {
+  color:black!important;
+  font-weight: normal;
+  background-color: #FFFF81!important;
+}
+.status-finished {
+  color:black!important;
+  font-weight: normal;
+  background-color:#FF8181!important;
 }

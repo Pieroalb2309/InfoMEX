@@ -1,0 +1,2 @@
+C:\Users\Piero\source\repos\ASPNETCORE\INFOMEX\reactapp\obj\Debug\InfoMEX.esproj.SuggestedBindingRedirects.cache
+C:\Users\Piero\source\repos\ASPNETCORE\INFOMEX\reactapp\obj\Debug\InfoMEX.esproj.CoreCompileInputs.cache

@@ -1,0 +1,41 @@
+[
+  {
+    "SetUp": 1,
+    "Levate": 1,
+    "Larghezza": 10400,
+    "Trattamento": "OA",
+    "JumboLunghezza": 24000,
+    "RunCode": "28230",
+    "RunCode1": "28230",
+    "ProductCode": "PA0120-OA",
+    "Thickness": 12.0,
+    "MachineCode": "P1"
+  },
+  {
+    "setUp": 2,
+    "levate": 1,
+    "levateTagliate": 0,
+    "jumboLunghezza": 10000,
+    "larghezza": 8260,
+    "lunghezza": 12100,
+    "trattamento": 40
+  },
+  {
+    "setup": 3,
+    "levate": 1,
+    "levateTagliate": 0,
+    "jumboLunghezza": 10000  ,
+    "larghezza": 8260,
+    "lunghezza": 12200,
+    "trattamento": 40
+  },
+  {
+    "setup": 4,
+    "levate": 44,
+    "levateTagliate": 0,
+    "jumboLunghezza": 10000,
+    "larghezza": 8260,
+    "lunghezza": 12300,
+    "trattamento": 40
+  }
+]
